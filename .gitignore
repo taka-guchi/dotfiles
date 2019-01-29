@@ -1,0 +1,5 @@
+.config/*
+!.config/dein
+!.config/nvim
+*.log
+.DS_Store
