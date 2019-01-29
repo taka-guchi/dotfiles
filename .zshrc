@@ -25,6 +25,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
 bindkey '^J' autosuggest-execute
 bindkey '^K' autosuggest-accept
 
+# spaceship-prompt 
+SPACESHIP_VI_MODE_SHOW=false
+
 setopt print_eight_bit
 
 autoload -Uz compinit

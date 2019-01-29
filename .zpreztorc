@@ -1,18 +1,19 @@
 # Set the Prezto modules to load (browse modules).
 zstyle ':prezto:load' pmodule \
-  'autosuggestions' \
-  'completion' \
-  'directory' \
-  'docker' \
-  'editor' \
   'environment' \
-  'git' \
-  'history' \
-  'prompt' \
-  'spectrum' \
-  'syntax-highlighting' \
   'terminal' \
-  'utility'
+  'editor' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'git' \
+  'docker' \
+  'completion' \
+  'syntax-highlighting' \
+  'contrib-prompt' \
+  'prompt' \
+  'autosuggestions'
 
 # autosuggestions
 zstyle ':prezto:module:autosuggestions:color' found ''
@@ -21,7 +22,7 @@ zstyle ':prezto:module:autosuggestions:color' found ''
 zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # prompt
-zstyle ':prezto:module:prompt' theme 'pure'
+zstyle ':prezto:module:prompt' theme 'spaceship'
 
 # syntax Highlighting
 zstyle ':prezto:module:syntax-highlighting' color 'yes'
