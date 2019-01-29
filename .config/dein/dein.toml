@@ -70,9 +70,6 @@ repo = 'Shougo/neomru.vim'
 # htmlタグ補完
 [[plugins]]
 repo = 'mattn/emmet-vim'
-hook_add = '''
-  let g:user_emmet_leader_key='<C-Q>'
-'''
 
 [[plugins]]
 repo = 'w0rp/ale'
