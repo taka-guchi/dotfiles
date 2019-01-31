@@ -22,11 +22,11 @@ hook_add = '''
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 hook_add = '''
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline_powerline_fonts = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
-let g:airline#extensions#hunks#enabled = 0
+  let g:airline_powerline_fonts = 1
+  let g:airline#extensions#tabline#formatter = 'unique_tail'
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
+  let g:airline#extensions#hunks#enabled = 0
 '''
 
 # パワーラインのテーマ
@@ -37,6 +37,7 @@ hook_add = '''
   let g:airline#extensions#ale#enabled = 1
 '''
 
+# インデントを可視化するやつ
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = '''
@@ -61,16 +62,22 @@ hook_add = '''
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
+# スニペットを管理するやつ
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
+# バッファ・ヤンクの履歴を管理するやつ
 [[plugins]]
 repo = 'Shougo/neomru.vim'
 
-# htmlタグ補完
+# hmtlタグを補完するやつ
 [[plugins]]
 repo = 'mattn/emmet-vim'
+hook_add = '''
+  let g:user_emmet_leader_key='<C-Q>'
+'''
 
+# Syntaxチェックしてくれるやつ
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
@@ -110,8 +117,10 @@ hook_add = '''
 # ====================
 # Git関連
 # ====================
+# ファイルの差分状態を左端に表示するやつ
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
+# vim内でのgit操作を可能にするやつ
 [[plugins]]
 repo = 'tpope/vim-fugitive'
