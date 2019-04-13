@@ -116,7 +116,7 @@ if dein#load_state(s:dein_dir)
 
     let s:toml_dir = expand('$CONFIG/dein')
 
-    call dein#add('altercation/vim-colors-solarized')
+    call dein#add('raphamorim/lucario')
     call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
     call dein#load_toml(s:toml_dir . '/lazy.toml', {'lazy': 1})
     call dein#load_toml(s:toml_dir . '/ruby.toml', {'lazy': 1})
@@ -134,10 +134,9 @@ if has('vim_starting') && dein#check_install()
     call dein#install()
 endif
 
-let g:solarized_termcolors=256
 syntax enable
-set background=dark
-colorscheme solarized
+set number
+colorscheme lucario
 " }}}
 
 " #####################################
