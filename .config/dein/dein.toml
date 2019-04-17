@@ -3,20 +3,9 @@ repo = 'Shougo/dein.vim'
 # ====================
 # 見た目周り
 # ====================
-# テーマ
+# アイコンを表示するやつ
 [[plugins]]
-repo = 'kristijanhusak/vim-hybrid-material'
-hook_add = '''
-  set t_Co=256
-  set background=dark
-  syntax on
-  colorscheme hybrid_reverse
-  highlight Normal ctermbg=none
-  highlight NonText ctermbg=none
-  highlight TablineSel ctermbg=none
-  highlight LineNr ctermbg=none
-  highlight CursorLineNr ctermbg=none
-'''
+repo = 'ryanoasis/vim-devicons'
 
 # パワーライン
 [[plugins]]

@@ -17,6 +17,8 @@ set softtabstop=2
 set autoindent
 set smarttab
 
+" font
+set encoding=utf-8
 
 " change tab setting in case by filetypes
 filetype plugin indent on
@@ -63,7 +65,6 @@ set whichwrap=b,s,h,l,<,>,[,]                   "カーソル行を行頭、行�
 set cursorline                                  "カーソル行をハイライト
 set clipboard=unnamed,unnamedplus               "クリップボードをWindowsと連携する
 set hidden                                      "変更中のでも保存せずで他のファイルを表示
-set number                                      "行番号を表示する
 set switchbuf=useopen                           "新しく開く代りイに既に開いているバッファを
 set vb t_vb=                                    "ビープ音を消す
 set novisualbell
@@ -134,8 +135,6 @@ if has('vim_starting') && dein#check_install()
     call dein#install()
 endif
 
-syntax enable
-set number
 colorscheme lucario
 " }}}
 
