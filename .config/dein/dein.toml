@@ -66,6 +66,10 @@ hook_add = '''
   let g:user_emmet_leader_key='<C-Q>'
 '''
 
+# 括弧等の削除や変更を簡単にするやつ
+[[plugins]]
+repo = 'tpope/vim-surround'
+
 # Syntaxチェックしてくれるやつ
 [[plugins]]
 repo = 'w0rp/ale'
