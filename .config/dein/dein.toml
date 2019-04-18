@@ -70,9 +70,13 @@ hook_add = '''
 [[plugins]]
 repo = 'tpope/vim-surround'
 
-# コマンドを繰り返せるやつ
+# コマンドの繰り返しを可能にするやつ
 [[plugins]]
 repo = 'tpope/vim-repeat'
+
+# 複数行コメントアウトを可能にするやつ
+[[plugins]]
+repo = 'tpope/vim-commentary'
 
 # Syntaxチェックしてくれるやつ
 [[plugins]]
