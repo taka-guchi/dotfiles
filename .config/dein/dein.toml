@@ -78,6 +78,10 @@ repo = 'tpope/vim-repeat'
 [[plugins]]
 repo = 'tpope/vim-commentary'
 
+# 編集中ファイルを実行するやつ
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
 # Syntaxチェックしてくれるやつ
 [[plugins]]
 repo = 'w0rp/ale'
