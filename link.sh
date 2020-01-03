@@ -4,8 +4,6 @@ ZSH_CUSTOM="$ZSH/custom"
 DOT_DIRECTORY="${HOME}/dotfiles"
 cd ${DOT_DIRECTORY}
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
 for f in .??*
 do
   # ignore file

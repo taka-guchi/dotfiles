@@ -1,8 +1,3 @@
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
-
 eval "$(rbenv init -)"
 eval "$(goenv init -)"
 eval "$(pyenv init -)"
@@ -22,18 +17,32 @@ alias fig="docker-compose"
 alias fir="docker-conpose run --rm"
 alias fie="docker-compose exec"
 
-# tmuxでZSH_AUTOSUGGEST_HIGHLIGHT_STYLEを有効にする
-export TERM=xterm-256color
-
-# Autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
-bindkey '^J' autosuggest-execute
-bindkey '^K' autosuggest-accept
-
 # spaceship-prompt
 SPACESHIP_VI_MODE_SHOW=false
 
+source "$HOME/.zplugin/bin/zplugin.zsh"
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-completions
+zplugin light zdharma/fast-syntax-highlighting
+zplugin load zdharma/history-search-multi-word
+zplugin light denysdovhan/spaceship-zsh-theme
+
+zplugin ice from"gh-r" as"program"
+zplugin load junegunn/fzf-bin
+
+zplugin ice from"gh-r" as"program" mv"docker* -> docker-compose" bpick"*linux*"
+zplugin load docker/compose
+
+zplugin ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
+zplugin light tj/git-extras
+
 setopt print_eight_bit
+
+bindkey '^j' autosuggest-execute
+bindkey '^k' autosuggest-accept
 
 autoload -Uz compinit
 compinit
