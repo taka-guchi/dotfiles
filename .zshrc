@@ -28,7 +28,7 @@ zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zplugin light zdharma/fast-syntax-highlighting
 zplugin load zdharma/history-search-multi-word
-zplugin light denysdovhan/spaceship-zsh-theme
+zplugin light taka-guchi/spaceship-prompt
 
 zplugin ice from"gh-r" as"program"
 zplugin load junegunn/fzf-bin
