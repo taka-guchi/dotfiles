@@ -5,7 +5,7 @@ $ git clone https://github.com/taka-guchi/dotfiles
 $ cd dotfiles
 $ ./link.sh
 ```
-## その他インストールが必要なもの
+## その他インストールするもの
 * fzf
 ***
 ```
