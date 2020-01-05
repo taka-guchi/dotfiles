@@ -37,6 +37,9 @@ zplugin light b4b4r07/enhancd
 zplugin light djui/alias-tips
 # promptのテーマ（forkして少しカスタマイズしてる）
 zplugin light taka-guchi/spaceship-prompt
+# lsコマンドの結果を見やすくするやつ
+zplugin ice pick'k.sh'
+zplugin light supercrabtree/k
 
 # option ######################################################################
 setopt mark_dirs
@@ -66,3 +69,4 @@ compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion::complete:*' use-cache true
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
