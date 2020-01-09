@@ -45,6 +45,7 @@ zplugin light supercrabtree/k
 setopt mark_dirs
 setopt globdots
 setopt print_eight_bit
+setopt nonomatch
 
 # alias #######################################################################
 alias vim="nvim"
