@@ -14,6 +14,9 @@ do
   ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
 
+if [ ! -e ${HOME}/.config ]; then
+    mkdir -p ${HOME}/.config
+fi
 cd .config
 
 for f in ??*
