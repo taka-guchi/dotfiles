@@ -31,7 +31,7 @@ $ brew upgrade ricty --vim-powerline --powerline
 $ cp -f /usr/local/Cellar/ricty/4.0.1/share/fonts/Ricty*.ttf ~/Library/Fonts/
 $ fc-cache -vf
 ```
-iTerm2→Preferences→Profiles→Text→Font→Ricty for Powerlineを選択
+※iTerm2→Preferences→Profiles→Text→Font→Ricty for Powerlineを選択
 * [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)(vim-devicons用)
 ```
 $ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
