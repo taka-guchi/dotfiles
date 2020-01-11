@@ -27,7 +27,7 @@ $ git clone https://github.com/raphamorim/lucario.git
 ### fontを入れる
 * Ricty for Powerline
 ```
-$ brew upgrade ricty --vim-powerline --powerline
+$ brew install ricty --with-powerline
 $ cp -f /usr/local/Cellar/ricty/4.0.1/share/fonts/Ricty*.ttf ~/Library/Fonts/
 $ fc-cache -vf
 ```
