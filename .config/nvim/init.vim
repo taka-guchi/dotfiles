@@ -117,7 +117,7 @@ if dein#load_state(s:dein_dir)
 
     let s:toml_dir = expand('$CONFIG/dein')
 
-    call dein#add('raphamorim/lucario')
+    call dein#add('morhetz/gruvbox')
     call dein#load_toml(s:toml_dir . '/dein.toml', {'lazy': 0})
     call dein#load_toml(s:toml_dir . '/lazy.toml', {'lazy': 1})
     call dein#load_toml(s:toml_dir . '/ruby.toml', {'lazy': 1})
@@ -135,8 +135,8 @@ if has('vim_starting') && dein#check_install()
     call dein#install()
 endif
 
-colorscheme lucario
-" }}}
+syntax enable
+colorscheme gruvbox
 
 " #####################################
 " ### Tab Split settings
