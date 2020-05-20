@@ -137,6 +137,7 @@ endif
 
 syntax enable
 colorscheme gruvbox
+" }}}
 
 " #####################################
 " ### Tab Split settings
