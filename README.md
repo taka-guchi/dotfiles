@@ -17,13 +17,13 @@ $ brew install tmux
 $ brew install fzf
 ```
 ### 好きなitermのカラースキームを入れる
-* [lucario](https://github.com/raphamorim/lucario)
+* [gruvbox](https://github.com/morhetz/gruvbox)
 ```
 $ mkdir ~/Colors
 $ cd ~/Colors
-$ git clone https://github.com/raphamorim/lucario.git
+$ git clone git clone https://github.com/morhetz/gruvbox-contrib.git
 ```
-※iTerm2→Preferences→Profiles→Colors→Color Presets...→Import...→~/Colors/lucario/iterm/Lucario.itermcolors
+※iTerm2→Preferences→Profiles→Colors→Color Presets...→Import...→~/Colors/gruvbox-contrib/iterm2/gruvbox-dark.itermcolors
 ### fontを入れる
 * Ricty for Powerline
 ```
