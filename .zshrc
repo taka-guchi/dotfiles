@@ -9,11 +9,16 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="/usr/local/opt/mysql@8.0/bin:$PATH"
+export PATH="$NVM_DIR/versions/node/v10.8.0/bin:$PATH"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
+# git
+export PATH="/usr/local/Cellar/git/2.26.0/bin:$PATH"
 
 # zplugin #####################################################################
 if [[ ! -d ~/.zplugin ]];then
@@ -35,8 +40,6 @@ zplugin light zdharma/history-search-multi-word
 zplugin light b4b4r07/enhancd
 # 利用可能なaliasを使わずにコマンドを実行した際に通知するやつ
 zplugin light djui/alias-tips
-# promptのテーマ（forkして少しカスタマイズしてる）
-zplugin light taka-guchi/spaceship-prompt
 # lsコマンドの結果を見やすくするやつ
 zplugin ice pick'k.sh'
 zplugin light supercrabtree/k
@@ -52,16 +55,20 @@ alias vim="nvim"
 alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -al"
-alias fig="docker-compose"
-alias fir="docker-conpose run --rm"
-alias fie="docker-compose exec"
+alias dc="docker-compose"
+alias dcr="docker-compose run --rm"
+alias dce="docker-compose exec"
+alias be="bundle exec"
+alias dbe="docker-compose run --rm web bundle exec"
 
 # key bind ####################################################################
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 bindkey '^j' autosuggest-execute
 bindkey '^k' autosuggest-accept
 
-# spaceship-prompt
-SPACESHIP_VI_MODE_SHOW=false
+# prompt ######################################################################
+autoload -U promptinit; promptinit
+prompt pure
 
 autoload -Uz compinit
 compinit
