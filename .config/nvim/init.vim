@@ -47,36 +47,37 @@ endfunction
 
 " edit
 set smartindent
-set showmatch                                   "閉じカッコが入力時対応するカッコを強調
-set backspace=indent,eol,start                  "バックスペースで各種消せるよう
+set showmatch
+set backspace=indent,eol,start
 set virtualedit=block
 
 " Search set ignorecase                         "検索時大文字小文字を区別しない
-set smartcase                                   "大文字を含めた検索はその通りに検索する
-set incsearch                                   "インクリメンタルサーチを行う
-set nohlsearch                                  "検索結果をハイライト表示しない
-set wrapscan                                    "循環検索オン
-set infercase                                   "補完の際大文字小文字を区別しない nnoremap <silent> <ESC> <ESC>:noh<CR>
+set smartcase
+set incsearch
+set nohlsearch
+set wrapscan
+set infercase
 
 " Other
-set wildmenu                                    "ナビゲーションバーを有効に
-set tw=0                                        "自動改行オフ
-set whichwrap=b,s,h,l,<,>,[,]                   "カーソル行を行頭、行末で止まらないように
-set cursorline                                  "カーソル行をハイライト
-set clipboard=unnamed,unnamedplus               "クリップボードをWindowsと連携する
-set hidden                                      "変更中のでも保存せずで他のファイルを表示
-set switchbuf=useopen                           "新しく開く代りイに既に開いているバッファを
-set vb t_vb=                                    "ビープ音を消す
+set wildmenu
+set tw=0
+set whichwrap=b,s,h,l,<,>,[,]
+set cursorline
+set clipboard=unnamed,unnamedplus
+set hidden
+set switchbuf=useopen
+set vb t_vb=
 set novisualbell
-set nostartofline                               "移動コマンドを使った時行頭に移動しない
-set matchpairs& matchpairs+=<:>                 "<>を対応括弧ペアに
-set matchtime=3                                 "対応括弧表示を3秒に
-set wrap                                        "ウィンドウより長い行は折り畳む
-set textwidth=0                                 "テキストの最大幅を無効に
-set shiftround                                  "インデントをshiftwidthの倍数に
-set history=10000                               "コマンド、検索の履歴を１万個まで
-set mouse=a                                     "マウスモード有効
-inoremap jj <ESC>                               "入力モード中に素早くjjと入力した時はESC
+set nostartofline
+set matchpairs& matchpairs+=<:>
+set matchtime=3
+set wrap
+set textwidth=0
+set shiftround
+set history=10000
+set mouse=a
+inoremap <silent> jj <ESC>
+inoremap <silent> っｊ <ESC>
 
 " #####################################
 " ### Python provider
@@ -194,3 +195,4 @@ else
   let &t_SI = "\e[5 q"
   let &t_EI = "\e[2 q"
 endif
+
